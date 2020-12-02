@@ -1,9 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<h1>Happy Birthday Dyta</h1>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>News Reader</title>
+    <meta name="description" content="My first PWA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00897B" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+
+    <!-- Akhir Navigasi -->
+
+    <div class="container" id="body-content"></div>
+
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <audio id="myAudio" controls autoplay>
+      <source src="horse.ogg" type="audio/ogg" />
+      <source src="one_only.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/api.js"></script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myAudio").autoplay;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
 </html>
